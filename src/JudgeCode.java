@@ -10,11 +10,11 @@ import java.util.HashMap;
 public class JudgeCode {
 
     //设置APPID/AK/SK
-    public static final String APP_ID = "10564989";
-    public static final String API_KEY = "xnOIoKcX44zUxYuca6qComZQ";
-    public static final String SECRET_KEY = "UOIp0fMt3YQSiR6jjsf875td3eZEiw30";
+    public static final String APP_ID = "你的百度云ORC信息";
+    public static final String API_KEY = "你的百度云ORC信息";
+    public static final String SECRET_KEY = "你的百度云ORC信息";
 
-    public String run(int number) {
+    public String run() {
         // 初始化一个AipOcr
         AipOcr client = new AipOcr(APP_ID, API_KEY, SECRET_KEY);
 
@@ -23,12 +23,11 @@ public class JudgeCode {
         client.setSocketTimeoutInMillis(60000);
 
         // 调用接口
-        String path = number+".aspx";
+        String path = "本地文件路径";     //本地文件路径
         JSONObject res = client.basicGeneral(path, new HashMap<String, String>());
 
-
-        JSONObject word = (JSONObject) (res.getJSONArray("words_result").get(0));
-        String ocrresult = word.get("words").toString();
+        JSONObject word=(JSONObject)(res.getJSONArray("words_result").get(0)) ;
+        String ocrresult=word.get("words").toString();
         //System.out.println(ocrresult);
         //System.out.println(res);
         return ocrresult;
