@@ -2,14 +2,14 @@
  java抢座位，自动抢某学校的图书馆座位
 
  *免责声明：仅供研究使用，请勿进行非法用途。*
- 
- 
+
+
  ![](https://github.com/Sniper970119/GarbSeat/blob/master/image/show01.png)
- 
+
  ![](https://github.com/Sniper970119/GarbSeat/blob/master/image/show02.png)
- 
+
  ![](https://github.com/Sniper970119/GarbSeat/blob/master/image/show03.png)
- 
+
  ![](https://github.com/Sniper970119/GarbSeat/blob/master/image/show04.png)
 
 
@@ -26,7 +26,7 @@
 ```
  #### [安装百度OCR](https://ai.baidu.com/download?sdkId=1)
  ```
- 1. 下载HtmlUnit
+ 1. 下载SDK
  2. 使用编译器导入外部jar包
  ```
 
